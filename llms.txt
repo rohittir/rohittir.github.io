@@ -1,0 +1,43 @@
+# Rohit Tirmanwar
+
+> Software architect and hands-on tech lead who designs large-scale distributed systems on AWS serverless. Sr Lead Engineer at The College Board, leading a team of 6 to 8 engineers on Higher Ed and Financial Aid platforms used by millions of students worldwide. About 15 years of experience. Open to Staff and Principal Engineer roles.
+
+## Contact
+
+- Email: rohit.tir2@gmail.com
+- Phone: +1 571-338-1143
+- LinkedIn: https://www.linkedin.com/in/rohit-tirmanwar/
+- GitHub: https://github.com/rohittir
+- Location: Northern Virginia, United States (Washington DC area)
+
+## Experience
+
+- May 2023 to present: Sr Lead Engineer, The College Board, Reston, Virginia. Architect and tech lead for Higher Ed and Financial Aid platforms. Owns end-to-end design of multiple distributed serverless services on AWS Lambda, API Gateway and DynamoDB, defined with AWS CDK in TypeScript. Leads 6 to 8 engineers. Shipped production AI features including an OCR document-processing pipeline and an AI chatbot.
+- Apr 2021 to May 2023: Lead Software Engineer, Scadea Solutions, as a consultant embedded with The College Board on the same platforms. Designed and built serverless SaaS products on AWS with Node.js and React; led the development team.
+- Jul 2019 to Apr 2021: Senior Software Engineer, then Lead Software Engineer (Jan 2021), PowerSchool, Arlington, Virginia. Full-stack engineer on K-12 education technology: React, Node.js, Express, GraphQL, MongoDB, AWS.
+- Jul 2018 to Jul 2019: Front End Engineer, Folio Financial, McLean, Virginia. Owned the Angular and Node.js front end of a robo-advisor product; designed a white-label architecture with a GraphQL layer, Redux and an npm component library.
+- Jan 2017 to May 2018: Graduate Research Assistant, George Mason University. Built a web application for a crowdsourced intelligence-analysis research project; scrum master for a team of five.
+- Aug 2014 to Jul 2016: Lead Engineer, GE, Bengaluru, India.
+- Jun 2011 to Jul 2014: Software Engineer, Geometric, Pune, India. C++ and Qt on computational-geometry CAD software.
+
+## Education
+
+- Master's degree, Computer Software Engineering, George Mason University, 2016 to 2018, GPA 3.95
+- B.Tech, Mechanical Engineering, Government College of Engineering, Amravati, 2007 to 2011
+
+## Skills
+
+- Architecture: distributed systems, serverless architecture, system design, API design, infrastructure as code, observability
+- AWS: Lambda, API Gateway, DynamoDB, S3, CloudFront, CloudFormation, CDK (TypeScript), Route 53, EC2
+- Languages and frameworks: TypeScript, Node.js, JavaScript, React, GraphQL, Angular, C++
+- Leadership and practice: technical leadership, mentoring, agile delivery, CI/CD, TDD and BDD, Cypress, Datadog, New Relic, Splunk
+
+## Projects
+
+- [ai-application-chatbot](https://github.com/rohittir/ai-application-chatbot): chat agent that completes an application form through conversation. React, AWS Lambda, DynamoDB, Serverless Framework, LLM.
+- [dynamic-theming-with-css-variables](https://github.com/rohittir/dynamic-theming-with-css-variables): runtime theming for Angular apps with CSS custom properties. Demo: https://rohittir.github.io/dynamic-theming-with-css-variables/
+- [chain-reaction](https://github.com/rohittir/chain-reaction): multiplayer browser version of the Chain Reaction board game. Demo: https://rohittir.github.io/chain-reaction/
+
+## Pages
+
+- [Portfolio home](https://rohittir.github.io/): the full site, with the same content as this file plus schema.org Person data in JSON-LD.
