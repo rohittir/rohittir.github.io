@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Rohit Tirmanwar, Software Architect</title>
+<meta name="description" content="Rohit Tirmanwar is a software architect and hands-on tech lead who designs large-scale distributed systems on AWS serverless. Sr Lead Engineer at The College Board.">
+<meta property="og:title" content="Rohit Tirmanwar, Software Architect">
+<meta property="og:description" content="Software architect and hands-on tech lead. Large-scale distributed systems on AWS serverless. Sr Lead Engineer at The College Board.">
+<meta property="og:url" content="https://rohittir.github.io/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://rohittir.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='system-ui,sans-serif' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3ERT%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #fafafa;
+  --fg: #18181b;
+  --body: #3f3f46;
+  --muted: #52525b;
+  --line: #e4e4e7;
+  --chip: #efeff1;
+  --accent: #0f766e;
+  --accent-fg: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1012;
+    --fg: #e4e4e7;
+    --body: #c4c4cb;
+    --muted: #a1a1aa;
+    --line: #27272a;
+    --chip: #1b1c20;
+    --accent: #5eead4;
+    --accent-fg: #0f1012;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.skip { position: absolute; left: -999px; top: 1rem; z-index: 1; padding: .5rem .75rem; background: var(--accent); color: var(--accent-fg); border-radius: 6px; }
+.skip:focus { left: 1rem; }
+p { max-width: 65ch; }
+
+.layout { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+.side { padding: 3rem 0 1rem; }
+main { padding: 1rem 0 2rem; }
+
+h1 { font-size: clamp(2.25rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 .75rem; }
+.role { font-size: 1.125rem; font-weight: 500; margin: 0 0 1rem; }
+.tagline { color: var(--muted); max-width: 34ch; margin: 0 0 2rem; }
+nav { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; }
+nav a { color: var(--muted); text-decoration: none; font-size: .9375rem; font-weight: 600; }
+nav a:hover { color: var(--fg); }
+.cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+.btn {
+  display: inline-block; padding: .6rem 1.1rem; border-radius: 6px;
+  border: 1px solid var(--line); color: var(--fg); text-decoration: none;
+  font-weight: 600; font-size: .9375rem; white-space: nowrap;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.btn:hover { border-color: var(--accent); }
+.btn:active { transform: translateY(1px); }
+.btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+
+section { padding: 2rem 0 3rem; }
+h2 { font-size: 1.125rem; font-weight: 600; margin: 0 0 1.25rem; }
+section > p, .job li, .project p { color: var(--body); }
+h3 { font-size: 1.0625rem; font-weight: 600; margin: 0; }
+.at { color: var(--muted); font-weight: 500; }
+
+.job, .project { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+.job { display: grid; grid-template-columns: 1fr; gap: .25rem; }
+.when { font: 500 .8125rem/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--muted); margin: 0 0 .25rem; }
+.where { font-size: .875rem; color: var(--muted); margin: .15rem 0 .75rem; }
+.job ul { margin: 0; padding-left: 1.1rem; }
+.job li + li { margin-top: .4rem; }
+.project h3 a { color: var(--fg); text-decoration: none; }
+.project h3 a:hover { color: var(--accent); }
+.project p { margin: .5rem 0 0; }
+
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: .75rem 0 0; }
+.chips li { font-size: .8125rem; padding: .25rem .6rem; border-radius: 6px; background: var(--chip); color: var(--fg); }
+.skills { display: grid; gap: 2rem; }
+.skills h3 { font-size: .9375rem; }
+
+footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; font-size: .875rem; color: var(--muted); }
+
+@media (min-width: 640px) {
+  .skills { grid-template-columns: 1fr 1fr; }
+  .job { grid-template-columns: 8.5rem 1fr; gap: 1.25rem; }
+  .when { margin: .2rem 0 0; }
+}
+@media (min-width: 1024px) {
+  .layout { display: grid; grid-template-columns: 5fr 7fr; gap: 5rem; }
+  .side {
+    position: sticky; top: 0; height: 100dvh;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 5.5rem 0 4rem;
+  }
+  main { padding: 4rem 0 2rem; }
+  nav { flex-direction: column; gap: .75rem; }
+  .cta { margin-top: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<div class="layout">
+  <header class="side">
+    <div>
+      <!-- TODO: headshot. Save a square photo as site/headshot.jpg and uncomment:
+      <img src="headshot.jpg" alt="Rohit Tirmanwar" width="96" height="96" style="border-radius:6px;margin-bottom:1.5rem"> -->
+      <h1>Rohit Tirmanwar</h1>
+      <p class="role">Software architect and Sr Lead Engineer at The College Board</p>
+      <p class="tagline">I design large-scale distributed systems on AWS serverless and lead the engineers who build and run them.</p>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="https://www.linkedin.com/in/rohit-tirmanwar/">LinkedIn</a>
+      <a class="btn" href="https://github.com/rohittir">GitHub</a>
+      <!-- TODO: resume. Save site/resume.pdf and uncomment:
+      <a class="btn" href="resume.pdf">Resume</a> -->
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>For the past five years I have built the Higher Ed and Financial Aid platforms at The College Board, products that millions of students around the world depend on. I own the architecture of several of those services end to end, from the first design document to production operations.</p>
+      <p>The systems I design are distributed and serverless: AWS Lambda, API Gateway and DynamoDB, defined in TypeScript with AWS CDK and shipped through automated pipelines. I care about what keeps a system healthy after launch: observability, cost, failure modes, and the runbooks that let a team sleep.</p>
+      <p>I lead a team of six to eight engineers, from junior to senior, and I still write production code every week. Most recently my team shipped production AI features into those platforms, including an OCR document-processing pipeline and an AI chatbot. Before this I built financial and education products as a full-stack engineer, and I started my career writing C++ for CAD software. I hold a Master's in Software Engineering from George Mason University.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <p class="when">May 2023 - Present</p>
+        <div>
+          <h3>Sr Lead Engineer <span class="at">at The College Board</span></h3>
+          <p class="where">Reston, Virginia</p>
+          <ul>
+            <li>Architect and tech lead for Higher Ed and Financial Aid platforms used by millions of students worldwide.</li>
+            <li>Own the end-to-end design of multiple services: distributed, serverless systems on Lambda, API Gateway and DynamoDB, defined with AWS CDK in TypeScript.</li>
+            <li>Lead a team of six to eight engineers: technical direction, design reviews, delivery planning with product and stakeholders, and mentoring.</li>
+            <li>Shipped production AI features into the platforms, including an OCR document-processing pipeline and an AI chatbot.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="when">Apr 2021 - May 2023</p>
+        <div>
+          <h3>Lead Software Engineer <span class="at">at Scadea Solutions</span></h3>
+          <p class="where">Consultant embedded with The College Board</p>
+          <ul>
+            <li>Designed and built serverless SaaS products on AWS with Node.js and React for the same Higher Ed and Financial Aid platforms, then converted to a full-time College Board role.</li>
+            <li>Led the development team day to day, working with product owners and architects on secure, scalable, distributed services.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="when">Jul 2019 - Apr 2021</p>
+        <div>
+          <h3>Senior, then Lead Software Engineer <span class="at">at PowerSchool</span></h3>
+          <p class="where">Arlington, Virginia</p>
+          <ul>
+            <li>Full-stack engineer on K-12 education technology applications: React, Node.js, Express, GraphQL, MongoDB and AWS. Promoted to Lead in January 2021.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="when">Jul 2018 - Jul 2019</p>
+        <div>
+          <h3>Front End Engineer <span class="at">at Folio Financial</span></h3>
+          <p class="where">McLean, Virginia</p>
+          <ul>
+            <li>Owned the Angular and Node.js front end of a robo-advisor investment product.</li>
+            <li>Designed a white-label front-end architecture: lazy-loaded Angular modules, a GraphQL layer on Node.js, Redux state, and a shared component library published to npm and themed with Sass for multiple brands.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="when">Jan 2017 - May 2018</p>
+        <div>
+          <h3>Graduate Research Assistant <span class="at">at George Mason University</span></h3>
+          <p class="where">Fairfax, Virginia</p>
+          <ul>
+            <li>Built the web application for a crowdsourced intelligence-analysis research project in Angular, TypeScript and Java, and served as scrum master for a team of five.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="when">2011 - 2016</p>
+        <div>
+          <h3>Earlier career <span class="at">in India</span></h3>
+          <p class="where">GE, Bengaluru. Geometric, Pune.</p>
+          <ul>
+            <li>Lead Engineer at GE (2014 - 2016). Software Engineer at Geometric (2011 - 2014), writing C++ and Qt for computational-geometry CAD software.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3><a href="https://github.com/rohittir/ai-application-chatbot">ai-application-chatbot</a></h3>
+        <p>A chat agent that completes an application form through conversation instead of fields. React front end, AWS Lambda and DynamoDB back end deployed with the Serverless Framework, and an LLM behind the dialogue.</p>
+        <ul class="chips"><li>React</li><li>AWS Lambda</li><li>DynamoDB</li><li>Serverless Framework</li><li>LLM</li></ul>
+      </article>
+
+      <article class="project">
+        <h3><a href="https://github.com/rohittir/dynamic-theming-with-css-variables">dynamic-theming-with-css-variables</a></h3>
+        <p>Runtime theming for Angular applications using CSS custom properties, so colors and styles change without a rebuild. <a href="https://rohittir.github.io/dynamic-theming-with-css-variables/">Live demo</a>.</p>
+        <ul class="chips"><li>Angular</li><li>TypeScript</li><li>CSS custom properties</li></ul>
+      </article>
+
+      <article class="project">
+        <h3><a href="https://github.com/rohittir/chain-reaction">chain-reaction</a></h3>
+        <p>A multiplayer browser version of the Chain Reaction board game. <a href="https://rohittir.github.io/chain-reaction/">Play it</a>.</p>
+        <ul class="chips"><li>JavaScript</li><li>Multiplayer</li></ul>
+      </article>
+
+      <p style="margin-top:1.5rem"><a href="https://github.com/rohittir?tab=repositories">All repositories on GitHub</a></p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Architecture</h3>
+          <ul class="chips"><li>Distributed systems</li><li>Serverless architecture</li><li>System design</li><li>API design</li><li>Infrastructure as code</li><li>Observability</li></ul>
+        </div>
+        <div>
+          <h3>AWS</h3>
+          <ul class="chips"><li>Lambda</li><li>API Gateway</li><li>DynamoDB</li><li>S3</li><li>CloudFront</li><li>CloudFormation</li><li>CDK (TypeScript)</li><li>Route 53</li><li>EC2</li></ul>
+        </div>
+        <div>
+          <h3>Languages and frameworks</h3>
+          <ul class="chips"><li>TypeScript</li><li>Node.js</li><li>JavaScript</li><li>React</li><li>GraphQL</li><li>Angular</li><li>C++</li></ul>
+        </div>
+        <div>
+          <h3>Leadership and practice</h3>
+          <ul class="chips"><li>Technical leadership</li><li>Mentoring</li><li>Agile delivery</li><li>CI/CD</li><li>TDD and BDD</li><li>Cypress</li><li>Datadog</li><li>New Relic</li><li>Splunk</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Plain HTML and CSS, hosted on GitHub Pages. <a href="https://github.com/rohittir/rohittir.github.io">Source</a>.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
