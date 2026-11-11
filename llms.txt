@@ -41,3 +41,4 @@
 ## Pages
 
 - [Portfolio home](https://rohittir.github.io/): the full site, with the same content as this file plus schema.org Person data in JSON-LD.
+- [Twenty System Designs](https://rohittir.github.io/system-design/): twenty system design problems, each with an architecture diagram, the hardest part drawn out, trade-offs and failure modes.
