@@ -1,6 +1,6 @@
 # Rohit Tirmanwar
 
-> Software architect and hands-on tech lead who designs large-scale distributed systems on AWS serverless. Sr Lead Engineer at The College Board, leading a team of 6 to 8 engineers on Higher Ed and Financial Aid platforms used by millions of students worldwide. About 15 years of experience. Open to Staff and Principal Engineer roles.
+> Software architect and hands-on tech lead who designs large-scale distributed systems on AWS serverless. Sr Lead Engineer at The College Board, setting architectural direction across multiple engineering teams for Higher Ed and Financial Aid platforms used by millions of students worldwide. More than 14 years of experience. Open to Staff and Principal Engineer roles.
 
 ## Contact
 
@@ -12,13 +12,13 @@
 
 ## Experience
 
-- May 2023 to present: Sr Lead Engineer, The College Board, Reston, Virginia. Architect and tech lead for Higher Ed and Financial Aid platforms. Owns end-to-end design of multiple distributed serverless services on AWS Lambda, API Gateway and DynamoDB, defined with AWS CDK in TypeScript. Leads 6 to 8 engineers. Shipped production AI features including an OCR document-processing pipeline and an AI chatbot.
-- Apr 2021 to May 2023: Lead Software Engineer, Scadea Solutions, as a consultant embedded with The College Board on the same platforms. Designed and built serverless SaaS products on AWS with Node.js and React; led the development team.
-- Jul 2019 to Apr 2021: Senior Software Engineer, then Lead Software Engineer (Jan 2021), PowerSchool, Arlington, Virginia. Full-stack engineer on K-12 education technology: React, Node.js, Express, GraphQL, MongoDB, AWS.
-- Jul 2018 to Jul 2019: Front End Engineer, Folio Financial, McLean, Virginia. Owned the Angular and Node.js front end of a robo-advisor product; designed a white-label architecture with a GraphQL layer, Redux and an npm component library.
-- Jan 2017 to May 2018: Graduate Research Assistant, George Mason University. Built a web application for a crowdsourced intelligence-analysis research project; scrum master for a team of five.
-- Aug 2014 to Jul 2016: Lead Engineer, GE, Bengaluru, India.
-- Jun 2011 to Jul 2014: Software Engineer, Geometric, Pune, India. C++ and Qt on computational-geometry CAD software.
+- May 2023 to present: Sr Lead Engineer, The College Board, Reston, Virginia. Sets architectural direction for financial aid products across multiple teams of 4 to 6 engineers, including the modernization of a large legacy product on AWS: reviews the lead engineers' designs, decides technology trade-offs with principal architects, and aligns the roadmap with product. Improved REST API P99 latency by more than 60% across all microservices with a common lazy-loading library. Built an SDK and CDK library for Step Functions batch runs of up to hundreds of thousands of students, adopted by multiple teams and products. Architected an event-driven, hub-and-spoke data-transfer system on EventBridge, Step Functions and Glue that copies terabytes of tenant-partitioned data between environments for client sandboxes. Raised availability under event bursts by replacing a Redis cache with DynamoDB and fanning out read-heavy items across partition keys. Contributed to AI initiatives, including OCR document processing, an AI chatbot and AI evaluations.
+- Apr 2021 to May 2023: Lead Software Engineer, Scadea Solutions, as a consultant embedded with The College Board on the same platforms. Led a team of senior engineers that delivered a breaking redesign of the database and GraphQL API layers across 9 microservices in about 3 months with 100% feature parity. As senior full-stack engineer leading a team of 6 to 8, built a declarative rule engine library in TypeScript that cut delivery time for new features by up to 50%. Wrote a common SDK for database access and queue messaging in Lambda functions, adopted across the organization as a standard pattern. Fixed result accuracy for the roughly 20% of search queries that span nested relationships, using a broad Elasticsearch query with a custom Painless script.
+- Jul 2019 to Apr 2021: Senior Software Engineer, then Lead Software Engineer (Jan 2021), PowerSchool, Arlington, Virginia. Built a college-matching product from scratch and deployed it to production in under 6 months; it increased platform usage by 100% during Covid-19. Owned that launch end to end: full-stack development, the CI/CD pipeline, security checks and automated load tests. Led a team of 5 engineers. React, Apollo GraphQL, Redux, Node.js, AWS Lambda, MongoDB, Elasticsearch.
+- Jul 2018 to Jul 2019: Front End Engineer, Folio Financial, McLean, Virginia. Helped retain more than 90% of clients on a multi-tenant robo-advisor and brokerage platform by designing a white-labeled Angular architecture that renders each client's colors, styles and content at runtime. Owned the Angular and Node.js front-end codebase and cut the time to add new features by 80%.
+- Jan 2017 to May 2018: Graduate Research Assistant, George Mason University. Built the Angular front end of a crowdsourcing app for intelligence analysts, cutting new users' problem-solving time by 70%; scrum master for a team of five.
+- Aug 2014 to Jul 2016: Lead Engineer, GE, Bengaluru, India. Built C++ and Qt features for UI and computational geometry.
+- Jun 2011 to Jul 2014: Software Engineer, Geometric, Pune, India. Designed, implemented and unit-tested new features for a geometry-based software product.
 
 ## Education
 
@@ -27,10 +27,11 @@
 
 ## Skills
 
-- Architecture: distributed systems, serverless architecture, system design, API design, infrastructure as code, observability
-- AWS: Lambda, API Gateway, DynamoDB, S3, CloudFront, CloudFormation, CDK (TypeScript), Route 53, EC2
-- Languages and frameworks: TypeScript, Node.js, JavaScript, React, GraphQL, Angular, C++
-- Leadership and practice: technical leadership, mentoring, agile delivery, CI/CD, TDD and BDD, Cypress, Datadog, New Relic, Splunk
+- Architecture and leadership: system design, distributed systems, microservices, event-driven architecture, design reviews, mentoring
+- Languages and frameworks: TypeScript, JavaScript, Node.js, React, Redux, Angular, GraphQL, REST, Java, Python
+- AWS: Lambda, Step Functions, EventBridge, SQS, SNS, API Gateway, AppSync, S3, Glue, Kinesis, IAM, CDK
+- Data and search: DynamoDB, MongoDB, PostgreSQL, Redis, Elasticsearch, OpenSearch
+- Delivery and tooling: GitHub Actions, CodePipeline, Docker, Jest, Cypress, CloudWatch, Datadog, Splunk, Claude Code, Codex
 
 ## Projects
 
