@@ -36,7 +36,7 @@
 ## Projects
 
 - [OnePercent](https://github.com/rohittir/OnePercent): short daily brain games for children aged 7 to 14; passing a game at 80% or more unlocks the next level, about 1% harder. React, AWS Lambda, DynamoDB, AWS CDK, CloudFront, Playwright. Live: https://onepercent.workingalien.com
-- [VisaLife](https://visalife.workingalien.com): mobile-only web app for Indian nationals in the US on H-1B, H-4 and F-1 visas; turns a visa type, stage and situation into a short checklist with links to official sources. React, AWS Lambda, S3, AWS CDK, CloudFront.
+- [VisaLife](https://github.com/rohittir/VisaLife): mobile-only web app for Indian nationals in the US on H-1B, H-4 and F-1 visas; turns a visa type, stage and situation into a short checklist with links to official sources. React, AWS Lambda, S3, AWS CDK, CloudFront. Live: https://visalife.workingalien.com
 - [ai-application-chatbot](https://github.com/rohittir/ai-application-chatbot): chat agent that completes an application form through conversation. React, AWS Lambda, DynamoDB, Serverless Framework, LLM.
 - [dynamic-theming-with-css-variables](https://github.com/rohittir/dynamic-theming-with-css-variables): runtime theming for Angular apps with CSS custom properties. Demo: https://rohittir.github.io/dynamic-theming-with-css-variables/
 - [chain-reaction](https://github.com/rohittir/chain-reaction): multiplayer browser version of the Chain Reaction board game. Demo: https://rohittir.github.io/chain-reaction/
